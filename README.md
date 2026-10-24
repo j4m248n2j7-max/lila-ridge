@@ -1,16 +1,16 @@
-# Lila Ridge
+# Lila Ridge Store
 
-Everyday clothes & accessories, printed to order.
+Clean rebuild of the Lila Ridge everyday goods store.
 
-## Products shown
+## Current products
 - Lila Ridge Badge Mug 11oz — $19.99
 - Lila Ridge Tumbler with Straw 16oz — $28.99
 - Lila Ridge Stacked Canvas Tote — $21.99
+- Slow Mornings Unisex Hoodie — $39.99
+- Slow Mornings Long Sleeve Tee — $24.99
 
-## Next steps
-1. Add high-quality product images to the `images/` folder (mug.jpg, tumbler.jpg, tote.jpg).
-2. Expand the product catalog.
-3. Connect to Vercel for deployment.
-4. Add checkout (Paystack or similar).
+## Setup
+1. Add product images to the `images/` folder (mug.jpg, tumbler.jpg, tote.jpg, etc.).
+2. Deploy to Vercel by connecting this repo.
 
-Live site: https://lila-ridge.vercel.app
+Repo: https://github.com/j4m248n2j7-max/lila-ridge

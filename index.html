@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lila Ridge — Everyday Goods</title>
+  <title>Lila Ridge — Everyday clothes & accessories, printed to order</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="shipping">Shipping to the USA • UK • Canada. US/UK: about 5–8 days | Canada: 2–4 weeks.</div>
+
   <header>
     <a href="#" class="logo">Lila Ridge</a>
     <div class="search"><input type="search" placeholder="Search"></div>
-    <div class="nav-cats">
+    <nav class="nav-cats">
       <a href="#women">Women</a>
       <a href="#men">Men</a>
       <a href="#kids">Kids</a>
@@ -19,7 +20,7 @@
       <a href="#travel">Travel</a>
       <a href="#home">Home</a>
       <a href="#accessories">Accessories</a>
-    </div>
+    </nav>
   </header>
 
   <main>
@@ -28,41 +29,132 @@
       <p>Clothes and accessories for women, men and kids, printed to order.</p>
     </section>
 
-    <section class="products">
-      <h2>Home & Living</h2>
+    <!-- New In -->
+    <section id="new" class="products">
+      <h2>New in</h2>
       <div class="grid">
         <div class="card">
-          <img src="images/mug.jpg" alt="Lila Ridge Badge Mug">
-          <h3>Lila Ridge Badge Mug 11oz</h3>
-          <p class="price">$19.99</p>
+          <img src="images/p50-sky-m-v12-hs.webp" alt="Ribcage Bloom All-Over Tee">
+          <h3>Ribcage Bloom All-Over Tee</h3>
+          <p class="price">$32.99</p>
           <button>Add to Cart</button>
         </div>
         <div class="card">
-          <img src="images/tumbler.jpg" alt="Lila Ridge Tumbler">
-          <h3>Lila Ridge Tumbler with Straw 16oz</h3>
-          <p class="price">$28.99</p>
+          <img src="images/p51-sky-m-v12-hs.webp" alt="Ribcage Bloom Duffel Bag">
+          <h3>Ribcage Bloom Duffel Bag</h3>
+          <p class="price">$69.99</p>
           <button>Add to Cart</button>
         </div>
         <div class="card">
-          <img src="images/tote.jpg" alt="Lila Ridge Canvas Tote">
-          <h3>Lila Ridge Stacked Canvas Tote</h3>
-          <p class="price">$21.99</p>
+          <img src="images/p52-sky-m-v12-hs.webp" alt="Braided Wind All-Over Tee">
+          <h3>Braided Wind All-Over Tee</h3>
+          <p class="price">$32.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="images/p54-sky-m-v12-hs.webp" alt="Lily Bouquet All-Over Tee">
+          <h3>Lily Bouquet All-Over Tee</h3>
+          <p class="price">$32.99</p>
           <button>Add to Cart</button>
         </div>
       </div>
+    </section>
 
-      <h2>Tops</h2>
+    <!-- Women -->
+    <section id="women" class="products">
+      <h2>Women</h2>
       <div class="grid">
         <div class="card">
-          <img src="images/hoodie.jpg" alt="Slow Mornings Hoodie">
+          <img src="images/p01-white-m-v10-hs.webp" alt="Wildflower Line Fitted Tee">
+          <h3>Wildflower Line Fitted Tee</h3>
+          <p class="price">$22.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="images/p02-white-m-v10-hs.webp" alt="Retro Bloom Crop Tee">
+          <h3>Retro Bloom Crop Tee</h3>
+          <p class="price">$25.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="images/p05-pink-m-v12-hs.webp" alt="Ditsy Garden Leggings">
+          <h3>Ditsy Garden Leggings</h3>
+          <p class="price">$38.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="images/p09-red-m-v10-hs.webp" alt="Ditsy Garden Racerback Dress">
+          <h3>Ditsy Garden Racerback Dress</h3>
+          <p class="price">$37.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Men -->
+    <section id="men" class="products">
+      <h2>Men</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="images/p26-sand-m-v10-hs.webp" alt="Sun Over the Ridge Men's Classic Tee">
+          <h3>Sun Over the Ridge Men's Classic Tee</h3>
+          <p class="price">$23.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="images/p27-pink-m-v10-hs.webp" alt="Slow Mornings Unisex Hoodie">
           <h3>Slow Mornings Unisex Hoodie</h3>
           <p class="price">$39.99</p>
           <button>Add to Cart</button>
         </div>
         <div class="card">
-          <img src="images/tee.jpg" alt="Slow Mornings Tee">
-          <h3>Slow Mornings Long Sleeve Tee</h3>
-          <p class="price">$24.99</p>
+          <img src="images/p18-pink-m-v7-hs.webp" alt="Lila Ridge Badge Dad Hat">
+          <h3>Lila Ridge Badge Dad Hat</h3>
+          <p class="price">$27.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Home & Living -->
+    <section id="home" class="products">
+      <h2>Home & Living</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="images/p19-white-m-v7-c14.webp" alt="Lila Ridge Badge Mug">
+          <h3>Lila Ridge Badge Mug 11oz</h3>
+          <p class="price">$19.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="images/p20-pink-m-sm-v7-c14.webp" alt="Lila Ridge Tumbler">
+          <h3>Lila Ridge Tumbler with Straw 16oz</h3>
+          <p class="price">$28.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="images/p11-natural-m-v7-hs.webp" alt="Lila Ridge Canvas Tote">
+          <h3>Lila Ridge Stacked Canvas Tote</h3>
+          <p class="price">$21.99</p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kids -->
+    <section id="kids" class="products">
+      <h2>Kids</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="images/kids-tee.webp" alt="Kids Classic Tee">
+          <h3>Retro Bloom Kids Classic Tee</h3>
+          <p class="price">$18.99</p>
+          <button>Add to Cart</button>
+        </div>
+        <div class="card">
+          <img src="images/kids-hoodie.webp" alt="Kids Hoodie">
+          <h3>Wildflower Line Kids Hoodie</h3>
+          <p class="price">$36.99</p>
           <button>Add to Cart</button>
         </div>
       </div>
@@ -73,6 +165,7 @@
     <p>Made after you order, usually in 2–7 business days, then shipped.</p>
     <p>© 2026 Lila Ridge. All items are printed on demand.</p>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

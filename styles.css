@@ -1,18 +1,19 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #222; background: #fff; }
-.shipping { background: #000; color: #fff; text-align: center; padding: 8px; font-size: 13px; }
-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid #eee; flex-wrap: wrap; gap: 12px; }
-.logo { font-family: Georgia, serif; font-size: 22px; font-style: italic; text-decoration: none; color: #000; }
-.search input { padding: 8px 16px; border: 1px solid #ddd; border-radius: 20px; width: 180px; }
-.nav-cats a { margin-left: 14px; text-decoration: none; color: #333; font-size: 14px; }
-.hero { text-align: center; padding: 48px 20px; background: #fafafa; }
-.hero h1 { font-size: 28px; margin-bottom: 6px; }
-.products { max-width: 1100px; margin: 0 auto; padding: 32px 20px; }
-.products h2 { margin: 28px 0 16px; font-size: 20px; }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
-.card { border: 1px solid #eee; border-radius: 12px; overflow: hidden; text-align: center; }
-.card img { width: 100%; height: 260px; object-fit: cover; background: #f5f5f5; }
-.card h3 { padding: 12px 12px 4px; font-size: 15px; }
-.price { font-weight: 600; padding: 0 12px 12px; }
-.card button { width: calc(100% - 24px); margin: 0 12px 16px; padding: 10px; background: #000; color: #fff; border: none; border-radius: 20px; cursor: pointer; }
-footer { text-align: center; padding: 32px 20px; font-size: 13px; color: #666; border-top: 1px solid #eee; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #fafafa; color: #111; }
+.shipping { background: #111; color: #fff; text-align: center; padding: 8px; font-size: 13px; }
+header { display: flex; align-items: center; gap: 16px; padding: 12px 20px; background: #fff; border-bottom: 1px solid #eee; flex-wrap: wrap; }
+.logo { font-weight: 700; font-size: 20px; text-decoration: none; color: #111; }
+.search input { padding: 8px 12px; border: 1px solid #ddd; border-radius: 20px; width: 180px; }
+.nav-cats { display: flex; gap: 12px; flex-wrap: wrap; }
+.nav-cats a { text-decoration: none; color: #333; font-size: 14px; }
+.hero { text-align: center; padding: 40px 20px; }
+.hero h1 { font-size: 28px; margin: 0 0 8px; }
+.products { padding: 20px; }
+.products h2 { font-size: 20px; margin: 0 0 16px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+.card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.card img { width: 100%; height: 220px; object-fit: cover; background: #f0f0f0; }
+.card h3 { font-size: 15px; margin: 12px 12px 4px; }
+.price { margin: 0 12px 12px; font-weight: 600; }
+.card button { margin: 0 12px 12px; padding: 8px 16px; background: #111; color: #fff; border: none; border-radius: 20px; cursor: pointer; }
+footer { text-align: center; padding: 24px; font-size: 13px; color: #666; }

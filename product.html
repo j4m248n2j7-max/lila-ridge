@@ -20,33 +20,21 @@
       <div class="product-info">
         <h1 id="product-title">Product</h1>
         <p class="price" id="product-price">$0.00</p>
-        <p id="product-desc">Printed to order. Made after you buy.</p>
+        <p id="product-desc">Printed to order.</p>
         <button class="add-btn">Add to Cart</button>
         <p class="note">Printed to order • 2–7 business days production, then shipping.</p>
       </div>
     </div>
   </main>
 
+  <script src="script.js"></script>
   <script>
-    const products = {
-      'ribcage-tee': { title: 'Ribcage Bloom All-Over Tee', price: '$32.99', img: 'images/p50-sky-m-v12-hs.webp', desc: 'All-over print tee with an inked ribcage and wildflowers. Light mesh, relaxed fit.' },
-      'braided-tee': { title: 'Braided Wind All-Over Tee', price: '$32.99', img: 'images/p52-sky-m-v12-hs.webp', desc: 'Soft flowing braided wind pattern. Relaxed fit.' },
-      'lily-tee': { title: 'Lily Bouquet All-Over Tee', price: '$32.99', img: 'images/p54-sky-m-v12-hs.webp', desc: 'Lily bouquet all-over print. Relaxed fit.' },
-      'wildflower-tee': { title: 'Wildflower Line Fitted Tee', price: '$22.99', img: 'images/p01-white-m-v10-hs.webp', desc: 'Fitted tee with wildflower line print.' },
-      'leggings': { title: 'Ditsy Garden Leggings', price: '$38.99', img: 'images/p05-pink-m-v12-hs.webp', desc: 'High-waisted leggings with delicate floral print.' },
-      'mug': { title: 'Lila Ridge Badge Mug 11oz', price: '$19.99', img: 'images/p19-white-m-v7-c14.webp', desc: 'Ceramic mug with Lila Ridge badge.' },
-      'tumbler': { title: 'Lila Ridge Tumbler with Straw', price: '$28.99', img: 'images/p20-pink-m-sm-v7-c14.webp', desc: 'Insulated tumbler with straw.' },
-      'tote': { title: 'Lila Ridge Canvas Tote', price: '$21.99', img: 'images/p11-natural-m-v7-hs.webp', desc: 'Sturdy canvas tote with script logo.' },
-      'hoodie': { title: 'Slow Mornings Unisex Hoodie', price: '$39.99', img: 'images/p27-pink-m-v10-hs.webp', desc: 'Soft unisex hoodie.' },
-      'hat': { title: 'Lila Ridge Badge Dad Hat', price: '$27.99', img: 'images/p18-pink-m-v7-hs.webp', desc: 'Dad hat with embroidered badge.' }
-    };
-
     const params = new URLSearchParams(location.search);
     const id = params.get('id');
-    const p = products[id] || products['mug'];
+    const p = products.find(x => x.id === id) || products[0];
 
     document.getElementById('product-title').textContent = p.title;
-    document.getElementById('product-price').textContent = p.price;
+    document.getElementById('product-price').textContent = '$' + p.price.toFixed(2);
     document.getElementById('product-desc').textContent = p.desc;
     document.getElementById('product-img').src = p.img;
     document.getElementById('product-img').alt = p.title;

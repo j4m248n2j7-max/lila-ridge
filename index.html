@@ -11,14 +11,15 @@
 
   <header>
     <a href="/" class="logo">Lila Ridge</a>
-    <div class="search"><input type="search" placeholder="Search"></div>
+    <div class="search">
+      <input type="search" id="search" placeholder="Search products...">
+    </div>
     <nav>
       <a href="#new">New</a>
       <a href="#women">Women</a>
       <a href="#men">Men</a>
       <a href="#kids">Kids</a>
       <a href="#home">Home</a>
-      <a href="#accessories">Accessories</a>
     </nav>
   </header>
 
@@ -30,75 +31,8 @@
 
     <section id="new" class="section">
       <h2>New in</h2>
-      <div class="grid">
-        <a href="/product.html?id=ribcage-tee" class="card">
-          <img src="images/p50-sky-m-v12-hs.webp" alt="Ribcage Bloom All-Over Tee">
-          <h3>Ribcage Bloom All-Over Tee</h3>
-          <p class="price">$32.99</p>
-        </a>
-        <a href="/product.html?id=braided-tee" class="card">
-          <img src="images/p52-sky-m-v12-hs.webp" alt="Braided Wind All-Over Tee">
-          <h3>Braided Wind All-Over Tee</h3>
-          <p class="price">$32.99</p>
-        </a>
-        <a href="/product.html?id=lily-tee" class="card">
-          <img src="images/p54-sky-m-v12-hs.webp" alt="Lily Bouquet All-Over Tee">
-          <h3>Lily Bouquet All-Over Tee</h3>
-          <p class="price">$32.99</p>
-        </a>
-      </div>
-    </section>
-
-    <section id="women" class="section">
-      <h2>Women</h2>
-      <div class="grid">
-        <a href="/product.html?id=wildflower-tee" class="card">
-          <img src="images/p01-white-m-v10-hs.webp" alt="Wildflower Line Fitted Tee">
-          <h3>Wildflower Line Fitted Tee</h3>
-          <p class="price">$22.99</p>
-        </a>
-        <a href="/product.html?id=leggings" class="card">
-          <img src="images/p05-pink-m-v12-hs.webp" alt="Ditsy Garden Leggings">
-          <h3>Ditsy Garden Leggings</h3>
-          <p class="price">$38.99</p>
-        </a>
-      </div>
-    </section>
-
-    <section id="home" class="section">
-      <h2>Home & Living</h2>
-      <div class="grid">
-        <a href="/product.html?id=mug" class="card">
-          <img src="images/p19-white-m-v7-c14.webp" alt="Lila Ridge Badge Mug">
-          <h3>Lila Ridge Badge Mug 11oz</h3>
-          <p class="price">$19.99</p>
-        </a>
-        <a href="/product.html?id=tumbler" class="card">
-          <img src="images/p20-pink-m-sm-v7-c14.webp" alt="Lila Ridge Tumbler">
-          <h3>Lila Ridge Tumbler with Straw</h3>
-          <p class="price">$28.99</p>
-        </a>
-        <a href="/product.html?id=tote" class="card">
-          <img src="images/p11-natural-m-v7-hs.webp" alt="Canvas Tote">
-          <h3>Lila Ridge Canvas Tote</h3>
-          <p class="price">$21.99</p>
-        </a>
-      </div>
-    </section>
-
-    <section id="men" class="section">
-      <h2>Men</h2>
-      <div class="grid">
-        <a href="/product.html?id=hoodie" class="card">
-          <img src="images/p27-pink-m-v10-hs.webp" alt="Hoodie">
-          <h3>Slow Mornings Unisex Hoodie</h3>
-          <p class="price">$39.99</p>
-        </a>
-        <a href="/product.html?id=hat" class="card">
-          <img src="images/p18-pink-m-v7-hs.webp" alt="Dad Hat">
-          <h3>Lila Ridge Badge Dad Hat</h3>
-          <p class="price">$27.99</p>
-        </a>
+      <div class="grid" id="product-grid">
+        <!-- Products injected by JS -->
       </div>
     </section>
   </main>
@@ -107,5 +41,7 @@
     <p>Printed to order • Usually 2–7 business days production, then shipping.</p>
     <p>© 2026 Lila Ridge</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

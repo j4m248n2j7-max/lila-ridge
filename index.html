@@ -3,42 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lila Ridge — Everyday clothes & accessories, printed to order</title>
+  <title>Lila Ridge — Everyday clothes & accessories</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="shipping">Shipping to the USA • UK • Canada. US/UK: about 5–8 days | Canada: 2–4 weeks.</div>
+  <div class="announcement">Free shipping on orders over $75 • Printed to order</div>
 
   <header>
-    <a href="/" class="logo">Lila Ridge</a>
-    <div class="search">
-      <input type="search" id="search" placeholder="Search products...">
+    <div class="header-inner">
+      <a href="/" class="logo">Lila Ridge</a>
+      <nav>
+        <a href="#new">New</a>
+        <a href="#women">Women</a>
+        <a href="#men">Men</a>
+        <a href="#home">Home</a>
+      </nav>
+      <div class="search">
+        <input type="search" id="search" placeholder="Search">
+      </div>
     </div>
-    <nav>
-      <a href="#new">New</a>
-      <a href="#women">Women</a>
-      <a href="#men">Men</a>
-      <a href="#kids">Kids</a>
-      <a href="#home">Home</a>
-    </nav>
   </header>
 
   <main>
     <section class="hero">
-      <h1>Everyday items made for you</h1>
-      <p>Clothes and accessories for women, men and kids, printed to order.</p>
+      <div class="hero-content">
+        <h1>Everyday items<br>made for you</h1>
+        <p>Clothes and accessories, printed to order.</p>
+        <a href="#new" class="btn">Shop new arrivals</a>
+      </div>
     </section>
 
     <section id="new" class="section">
-      <h2>New in</h2>
-      <div class="grid" id="product-grid">
-        <!-- Products injected by JS -->
+      <div class="section-header">
+        <h2>New in</h2>
       </div>
+      <div class="grid" id="product-grid"></div>
     </section>
   </main>
 
   <footer>
-    <p>Printed to order • Usually 2–7 business days production, then shipping.</p>
+    <p>Printed to order • 2–7 business days production, then shipping.</p>
     <p>© 2026 Lila Ridge</p>
   </footer>
 
